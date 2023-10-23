@@ -7,6 +7,10 @@ namespace NesneHafta3
             InitializeComponent();
         }
 
-
+        private void button1_Click(object sender, EventArgs e)
+        {
+            label1.Text = "Merhaba Butona týkladým sonunda.";
+            label1.Text += "Naber";
+        }
     }
 }
