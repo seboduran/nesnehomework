@@ -23,6 +23,23 @@ namespace NesneHafta3
             sayac++;
 
         }
+        private void button5_Click(object sender, EventArgs e)
+        {
+            //string deger = textBox1.Text + " " + textBox2.Text + " " + textBox3.Text;
+            //listBox1.Items.Add(deger);
+            //comboBox1.Items.Add(deger);
+
+            if (listBox1.Items.Count > 0)
+            {
+                listBox1.Items.RemoveAt(listBox1.Items.Count - 1);
+            }
+
+            if (comboBox1.Items.Count > 0)
+            {
+                comboBox1.Items.RemoveAt(comboBox1.Items.Count - 1);
+            }
+
+        }
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -43,7 +60,7 @@ namespace NesneHafta3
         private void button4_Click(object sender, EventArgs e)
         {
             int sonuc = Liste_AdSoyad.Where(ayse => ayse.Contains(textBox4.Text)).Count();
-            MessageBox.Show(textBox4.Text + "de aradýðýn isim listede " + sonuc + " kadar bulunmaktadýr");
+            MessageBox.Show(textBox4.Text + "de aradï¿½ï¿½ï¿½n isim listede " + sonuc + " kadar bulunmaktadï¿½r");
         }
     }
 }

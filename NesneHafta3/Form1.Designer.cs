@@ -44,6 +44,7 @@
             label1 = new Label();
             textBox4 = new TextBox();
             button4 = new Button();
+            button5 = new Button();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             SuspendLayout();
@@ -52,6 +53,7 @@
             // 
             groupBox1.BackColor = Color.FromArgb(255, 192, 128);
             groupBox1.Controls.Add(button1);
+            groupBox1.Controls.Add(button5);
             groupBox1.Controls.Add(textBox3);
             groupBox1.Controls.Add(textBox2);
             groupBox1.Controls.Add(textBox1);
@@ -69,12 +71,19 @@
             // 
             button1.Location = new Point(144, 140);
             button1.Name = "button1";
-            button1.Size = new Size(172, 68);
+            button1.Size = new Size(150, 68);
             button1.TabIndex = 3;
             button1.Text = "Öğrenci Ekle";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            button5.Location = new Point(10, 140);
+            button5.Name = "button5";
+            button5.Size = new Size(150, 68);
+            button5.TabIndex = 3;
+            button5.Text = "Son ekleneni sil";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // textBox3
             // 
             textBox3.Location = new Point(144, 92);
@@ -239,6 +248,8 @@
         private Button button2;
         private Button button3;
         private Button button4;
+        private Button button5;
+
         private TextBox textBox4;
     }
 }
